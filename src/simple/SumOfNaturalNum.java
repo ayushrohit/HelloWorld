@@ -3,7 +3,7 @@ package simple;
 import java.util.Scanner;
 
 public class SumOfNaturalNum {
-	;
+	
 	void  sumOfNaturalNum(){
 		int sum=0;
 		int i=0;
@@ -17,6 +17,13 @@ public class SumOfNaturalNum {
 		System.out.println("The sum of first " +  i  +  " natural number is :" + sum);
 		
 		}
+	
+	public static void main(String[] args){
+		try{
+		SumOfNaturalNum obj = new SumOfNaturalNum();
+		obj.sumOfNaturalNum();
+		}catch(Exception e){System.out.println("Out of limit");}
+	}
 		
 		}
 		
