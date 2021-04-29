@@ -10,27 +10,27 @@ import java.util.Scanner;
  *
  */
 public class FactorialOfNumber {
-
+	// better than recursive
 	void usingIterativeSol(long number) {
 		int result = 1;
 		for (int i = 2; i <= number; i++) {
 			result = result * i;
 		}
-		System.out.println("The factorial of " + number + " is " + result +".Thank you!");
-		
-		
+		System.out.println("The factorial of " + number + " is " + result + ".Thank you!");
+
 	}
-	int usingRecursiveSol(long number){
-		
-		if(number == 0)
+
+	int usingRecursiveSol(long number) {
+
+		if (number == 0)
 			return 1;
-		return (int) (number * usingRecursiveSol(number-1));
-		
+		return (int) (number * usingRecursiveSol(number - 1));
+
 	}
 
 	public static void main(String[] args) {
 		long number = 0;
-		int result=0;
+		int result = 0;
 		FactorialOfNumber factorial = new FactorialOfNumber();
 		try {
 			Scanner sc = new Scanner(System.in);
@@ -39,8 +39,8 @@ public class FactorialOfNumber {
 			number = sc.nextLong();
 
 			factorial.usingIterativeSol(number);
-			result=factorial.usingRecursiveSol(number);
-			System.out.println("The factorial of " + number+ " is "+result +".") ;
+			result = factorial.usingRecursiveSol(number);
+			System.out.println("The factorial of " + number + " is " + result + ".");
 		} catch (Exception e) {
 			System.out.println("Please provide the correct input");
 		}
