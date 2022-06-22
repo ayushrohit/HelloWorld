@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 //time complexity of this code is theta(d) where d is the number of digits in number.
 
-
+public class PalindromeNumber{
 
 	void isPalindrome(int number) {
 		int reverse = 0;
@@ -32,7 +32,7 @@ import java.util.Scanner;
 			System.out.println("Enter the number which we need to check of palindrome or not.");
 			number = sc.nextInt();
 			palindromeNumber.isPalindrome(number);
-			palindromeNumber.;
+			
 		} catch (Exception e) {
 			System.out.println("Please provide the input in integer numbers only.");
 		}
